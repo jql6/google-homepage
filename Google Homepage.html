@@ -5,13 +5,28 @@
 		#flexbox{
 			display: flex;
 			justify-content: space-between;
+			align-content: center;
+		}
+		
+		#topleftbox{
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		#toprightbox{
+			display: flex;
+			justify-content: flex-end;
 		}
 
 		p{color: rgb(95, 99, 104);}
 		/* I chose the color with Apple's built in Digital Color Meter. */
 		/* Trying the values from element inspector didn't achieve the same
 		/* look. */
-		div{id="flexbox" background-color: rgb(242, 242, 242);}
+		
+		.lowerboxes{
+		/* Find a way to add a line above these boxes */
+			background-color: rgb(242, 242, 242);
+		}
 
 		#products{
 			display: grid;
@@ -39,7 +54,9 @@
 		}
 
 		#profile{
-			border-radius: 50%;	
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
 		}
 
 		#logo{
@@ -47,12 +64,24 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
+		#searchbox{
+			text-align: center;
+		}
 	</style>
-	<div>
+</head>
+
+<body>
+<div id="flexbox">
+	<div id="topleftbox">
 		<span>About</span>
 		<span>Store</span>
+	</div>
+	<div id="toprightbox">
 		<span>Gmail</span>
 		<span>Images</span>
+		<!-- This is the products icon -->
+		<!-- Could probably use javascript to shorten the code -->
 		<span id="products">
 			<div class="gray_square"></div>
 			<div class="white_square"></div>
@@ -86,25 +115,38 @@
 		</span>
 		<span><img id="profile" src="images/profile.png" alt="Image of the letter J"></span>
 	</div>
-</head>
-
-<body>
+</div>
+<div>
 <p>Hello</p>
 <img id="logo" src="images/googlelogo.png" alt="Logo of Google">
-</body>
+</div>
 
-<footer>
-<div>
-<p>Canada</p>
+<div id="searchbox">
+Search box here
 </div>
 
 <div>
-<p>Advertising</p>
-<p>Business</p>
-<p>How Search works</p>
-<p>Privacy</p>
-<p>Terms</p>
-<p>Settings</p>
+buttons here
+</div>
+
+<div>
+Google offered in: Français
+</div>
+
+</body>
+
+<footer>
+<div class="lowerboxes">
+<span>Canada</span>
+</div>
+
+<div class="lowerboxes">
+<span>Advertising</span>
+<span>Business</span>
+<span>How Search works</span>
+<span>Privacy</span>
+<span>Terms</span>
+<span>Settings</span>
 </div>
 </footer>
 </html>
