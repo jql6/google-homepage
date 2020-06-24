@@ -2,29 +2,102 @@
 <html>
 <head>
 	<style>
+		#flexbox{
+			display: flex;
+			justify-content: space-between;
+		}
+
 		p{color: rgb(95, 99, 104);}
 		/* I chose the color with Apple's built in Digital Color Meter. */
 		/* Trying the values from element inspector didn't achieve the same
 		/* look. */
-		div{background-color: rgb(242, 242, 242);}
+		div{id="flexbox" background-color: rgb(242, 242, 242);}
+
+		#products{
+			display: grid;
+			grid-template-columns: 8px 3px 8px 3px 8px;
+			grid-template-rows: 8px 3px 8px 3px 8px;
+			margin: 10px;
+			height: auto;
+			width: 40px;
+		}
+
+		.white_square{
+			width: 3px;
+			height: 3px;
+			background-color: white;
+		}
+		
+		.gray_square{
+			width: 8px;
+			height: 8px;
+			background-color: gray;
+		}
+		
+		#products:hover .gray_square{
+			background-color: black;
+		}
+
+		#profile{
+			border-radius: 50%;	
+		}
+
+		#logo{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	</style>
 	<div>
-		<p>About</p>
-		<p>Store</p>
-		<p>Gmail</p>
-		<p>Images</p>
+		<span>About</span>
+		<span>Store</span>
+		<span>Gmail</span>
+		<span>Images</span>
+		<span id="products">
+			<div class="gray_square"></div>
+			<div class="white_square"></div>
+			<div class="gray_square"></div>
+			<div class="white_square"></div>
+			<div class="gray_square"></div>
+
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			
+			<div class="gray_square"></div>
+			<div class="white_square"></div>
+			<div class="gray_square"></div>
+			<div class="white_square"></div>
+			<div class="gray_square"></div>
+
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+			<div class="white_square"></div>
+
+			<div class="gray_square"></div>
+			<div class="white_square"></div>
+			<div class="gray_square"></div>
+			<div class="white_square"></div>
+			<div class="gray_square"></div>
+		</span>
+		<span><img id="profile" src="images/profile.png" alt="Image of the letter J"></span>
 	</div>
 </head>
 
 <body>
 <p>Hello</p>
-<img src="images/googlelogo.png" alt="Logo of Google">
+<img id="logo" src="images/googlelogo.png" alt="Logo of Google">
 </body>
 
 <footer>
 <div>
 <p>Canada</p>
 </div>
+
 <div>
 <p>Advertising</p>
 <p>Business</p>
