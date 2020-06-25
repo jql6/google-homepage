@@ -3,6 +3,7 @@
 <!-- Used for the search icon -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
 <head>
 	<style>
 		#flexbox{
@@ -14,7 +15,7 @@
 			color: rgb(64, 64, 64);
 		}
 		
-		#topleftbox{
+		#top-left-box{
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -22,7 +23,7 @@
 			margin: 18px;
 		}
 
-		#toprightbox{
+		#top-right-box{
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
@@ -30,7 +31,7 @@
 			margin: 18px;
 		}
 
-		.bottomleftbox{
+		.bottom-left-box{
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -39,7 +40,7 @@
 			gap: 8px;
 		}
 
-		.bottomrightbox{
+		.bottom-right-box{
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
@@ -53,7 +54,7 @@
 		/* Trying the values from element inspector didn't achieve the same
 		/* look. */
 		
-		.lowerboxes{
+		.lower-boxes{
 		/* Find a way to add a line above these boxes */
 			display: flex;
 			justify-content: space-between;
@@ -73,7 +74,7 @@
 			color: rgb(131, 131, 131);
 		}
 
-		.bottom_grid{
+		.bottom-grid{
 			position: absolute;
 			bottom: 0px;
 			width: 100%;
@@ -91,19 +92,19 @@
 			align-items: center;
 		}
 
-		.white_square{
+		.white-square{
 			width: 2px;
 			height: 2px;
 			background-color: white;
 		}
 		
-		.gray_square{
+		.gray-square{
 			width: 4px;
 			height: 4px;
 			background-color: gray;
 		}
 		
-		#products:hover .gray_square{
+		#products:hover .gray-square{
 			background-color: black;
 		}
 
@@ -121,7 +122,7 @@
 			margin-bottom: 25px;
 		}
 
-		#searchbox{
+		#search-box{
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -135,7 +136,7 @@
 			margin: auto;
 		}
 
-		#searchbox:hover{
+		#search-box:hover{
 			box-shadow: 0px 0px 2px 2px rgb(223, 223, 223);
 			border-color: rgb(255, 255, 255);
 		}
@@ -196,45 +197,45 @@
 
 <body>
 <div id="flexbox">
-	<div id="topleftbox">
+	<div id="top-left-box">
 		<span>About</span>
 		<span>Store</span>
 	</div>
-	<div id="toprightbox">
+	<div id="top-right-box">
 		<span>Gmail</span>
 		<span>Images</span>
 		<!-- This is the products icon -->
 		<!-- Could probably use javascript to shorten the code -->
 		<span id="products">
-			<div class="gray_square"></div>
-			<div class="white_square"></div>
-			<div class="gray_square"></div>
-			<div class="white_square"></div>
-			<div class="gray_square"></div>
+			<div class="gray-square"></div>
+			<div class="white-square"></div>
+			<div class="gray-square"></div>
+			<div class="white-square"></div>
+			<div class="gray-square"></div>
 
-			<div class="white_square"></div>
-			<div class="white_square"></div>
-			<div class="white_square"></div>
-			<div class="white_square"></div>
-			<div class="white_square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
 			
-			<div class="gray_square"></div>
-			<div class="white_square"></div>
-			<div class="gray_square"></div>
-			<div class="white_square"></div>
-			<div class="gray_square"></div>
+			<div class="gray-square"></div>
+			<div class="white-square"></div>
+			<div class="gray-square"></div>
+			<div class="white-square"></div>
+			<div class="gray-square"></div>
 
-			<div class="white_square"></div>
-			<div class="white_square"></div>
-			<div class="white_square"></div>
-			<div class="white_square"></div>
-			<div class="white_square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
+			<div class="white-square"></div>
 
-			<div class="gray_square"></div>
-			<div class="white_square"></div>
-			<div class="gray_square"></div>
-			<div class="white_square"></div>
-			<div class="gray_square"></div>
+			<div class="gray-square"></div>
+			<div class="white-square"></div>
+			<div class="gray-square"></div>
+			<div class="white-square"></div>
+			<div class="gray-square"></div>
 		</span>
 		<span><img id="profile" src="images/profile.png" alt="Image of the letter J"></span>
 	</div>
@@ -243,42 +244,44 @@
 <img id="logo" src="images/googlelogo.png" alt="Logo of Google">
 </div>
 
-<div id="searchbox">
+<div id="search-box">
 <i class="material-icons md-20">search</i>
 <input type="text"></input>
 </div>
 
 <div class="buttons">
-<button>Google Search</button>
-<button>I'm Feeling Lucky</button>
+<button>Google Search</button> <button>I'm Feeling Lucky</button>
 </div>
 
 <div id="French">
 Google offered in:  Français
 </div>
-
 </body>
 
 <footer>
-<div class="bottom_grid">
-	<div class="lowerboxes">
-		<div class="bottomleftbox" id="Canada">
+<div class="bottom-grid">
+
+	<div class="lower-boxes">
+		<div class="bottom-left-box" id="Canada">
 			<span>Canada</span>
 		</div>
 	</div>
 
-	<div class="lowerboxes">
-		<div class="bottomleftbox">
+	<div class="lower-boxes">
+		<div class="bottom-left-box">
 			<span>Advertising</span>
 			<span>Business</span>
 			<span>How Search works</span>
 		</div>
-		<div class="bottomrightbox">
+
+		<div class="bottom-right-box">
 			<span>Privacy</span>
 			<span>Terms</span>
 			<span>Settings</span>
 		</div>
 	</div>
+
 </div>
 </footer>
+
 </html>
